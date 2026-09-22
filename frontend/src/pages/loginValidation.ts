@@ -1,0 +1,10 @@
+import * as Yup from 'yup';
+
+export const loginValidationSchema = Yup.object({
+  username: Yup.string()
+    .trim()
+    .required('Username is required'),
+
+  password: Yup.string()
+    .required('Password is required'),
+});
